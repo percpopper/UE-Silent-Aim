@@ -29,9 +29,8 @@ void GetPlayerViewPointHook(APlayerController* this_PlayerController, FVector* L
 				auto Mesh = Player->Mesh;
 				if (Mesh) {
 					// Get Target Bone Location
-					// Calculate Rotation
+					FRotator AimAt; // = Calculate Rotation
 					// Set Rotation
-					FRotator AimAt; // = TargetRotation
 					*Rotation = AimAt;
 				}
 			}
