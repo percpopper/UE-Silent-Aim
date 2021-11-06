@@ -1,6 +1,7 @@
 FVector OriginalLocation;
 FRotator OriginalRotation;
 
+// https://docs.unrealengine.com/4.27/en-US/API/Runtime/Engine/Engine/ULocalPlayer/GetViewPoint/
 void(*GetViewPoint)(ULocalPlayer*, FMinimalViewInfo*, EStereoscopicPass) = nullptr;
 void GetViewPointHook(ULocalPlayer* this_LocalPlayer, FMinimalViewInfo* OutViewInfo, EStereoscopicPass StereoPass)
 {
@@ -12,6 +13,7 @@ void GetViewPointHook(ULocalPlayer* this_LocalPlayer, FMinimalViewInfo* OutViewI
 	}
 }
 
+// https://docs.unrealengine.com/4.26/en-US/API/Runtime/Engine/GameFramework/APlayerController/GetPlayerViewPoint/
 void(*GetPlayerViewPoint)(APlayerController*, FVector*, FRotator*) = nullptr;
 void GetPlayerViewPointHook(APlayerController* this_PlayerController, FVector* Location, FRotator* Rotation) {
 
