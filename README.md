@@ -1,6 +1,7 @@
 # UE4-Silent-Aim
+
 An Unreal Engine 4 silent aim method, not usable on all games.
-Tested on Rogue Company & Bloodhunt
+Only tested on Fortnite, Rogue Company, Bloodhunt, and Splitgate.
 
 Done though hooking these two functions.
 
