@@ -1,5 +1,5 @@
-FVector OriginalLocation;
-FRotator OriginalRotation;
+FVector OriginalLocation(0,0,0);
+FRotator OriginalRotation(0,0,0);
 
 // https://docs.unrealengine.com/4.27/en-US/API/Runtime/Engine/Engine/ULocalPlayer/GetViewPoint/
 void(*GetViewPoint)(ULocalPlayer*, FMinimalViewInfo*, EStereoscopicPass) = nullptr;
